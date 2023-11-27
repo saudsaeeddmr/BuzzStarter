@@ -1,7 +1,10 @@
 .ListDiv {
     display:flex;
+    height: 100%;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    background-color: #fff;
     width: 178px;
-    background: white;
     list-style: none;
     padding: 10px 15px;
     display: block;

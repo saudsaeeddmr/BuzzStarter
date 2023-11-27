@@ -1,65 +1,81 @@
-#wrapper {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.menu {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #fff;
-    width: 240px;
-    height: 100%;
-    transform: translate3d(-240px, 0, 0);
-    transition: transform 0.35s;
-}
-
-label {
-    cursor: pointer;
-    /* &:focus */
-    outline: none;
-}
-
-label.menu-toggle {
-    position: absolute;
-    right: -60px;
-    width: 60px;
-    height: 60px;
-    line-height: 0px;
+.ListDiv {
+    display:flex;
+    width: 178px;
+    background: white;
+    list-style: none;
+    padding: 10px 15px;
     display: block;
-    padding: 0;
-    text-indent: -9999px;
-    background: #fff;
-
-}
-
-ul li>label {
-    background-color: aqua;
-}
-
-ul a,label {
-    display: block;
-    text-align: center;
-    padding: 0 20px;
-    line-height: 60px;
+    /* font-weight: 700; */
     text-decoration: none;
+    transition: all 150ms;
     color: #000;
-    /* &:hover */
-    color: #666;
+
+}
+li:not(:last-child) > a {
+    border-bottom: 1px solid #efefef;
+}
+.ListDiv {
+    border-bottom: 1px solid #efefef;
+
 }
 
-.menu-checkbox {
-    display: none
+.ListDiv :hover {
+    transform: scale(1.1);
+    transition: all 150ms;
+    border-top: 1px solid #ddd;
+    text-decoration: none;
+    /* padding: 0px 7px; */
 }
-.menu .menu label.menu-toggle{
-    background: none;
+
+.sportimg {
+    margin-right: 10px;
+    display: inline-block;
+    width: 20px;
 }
-  
-    
-/* fade in checked menu */    
-.menu-checkbox:checked + .menu{
-    transform: translate3d(0, 0, 0)
+
+.arrowicon {
+    background-image: url(../../assets/sidNav/submenu-arrow.svg);
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    background-size: 8px 12px;
 }
- 
+
+li.has-submenu > a {
+    background-image: url(../../assets/sidNav/submenu-arrow.svg);
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    background-size: 8px 12px;
+}
+ li:not(:last-child) > a {
+    border-bottom: 1px solid #efefef;
+}
+li > a {
+    display: block;
+    font-weight: 700;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: all 150ms;
+    color: #000;
+}
+li:not(:last-child) > a {
+    border-bottom: 1px solid #efefef;
+}
+ li > a:hover {
+    transform: scale(1.1);
+    border-top: 1px solid #ddd;
+    text-decoration: none;
+}
+ li > a:hover {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+ li {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+.sport-icon {
+    margin-right: 10px;
+    display: inline-block;
+    width: 20px;
+}

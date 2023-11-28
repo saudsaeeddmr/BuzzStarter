@@ -1,3 +1,20 @@
 .MianContainer{
     display: flex
 }
+.centerBlock{
+    padding: 0 20px 20px;
+    width: 70%;
+}
+
+@media only screen and (min-width:786px) {
+    .showInMobile {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .centerBlock{
+        padding: unset;
+        width: 100%;
+    }
+}

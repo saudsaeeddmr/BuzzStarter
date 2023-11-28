@@ -1,0 +1,204 @@
+.gradient {
+    background-image: linear-gradient(90deg, #686666 50%, #707070);
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.game-title-box {
+    padding: .562rem .5rem !important;
+    border-top-left-radius: 1rem !important;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 400;
+    background: transparent linear-gradient(94deg, #b6842d, #ebda8d 55%, #b7862f);
+    display: inline-flex;
+    clip-path: polygon(0px 0px, 100% 0%, 85% 100%, 0% 100%);
+    width: 100%;
+}
+
+.game-title-box-right {
+    width: 100%;
+}
+
+.game-icon-img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.bet-table-body {
+    padding: 5px;
+    box-shadow: 0 0 5px 0 #989898;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    background-color: white;
+}
+
+.bet-table-row {
+    border-bottom: 1px solid #e5e5e5;
+    border-left: 4px solid #fff;
+}
+
+.bet-table-row:hover {
+    border-left: 4px solid #b88831;
+}
+
+.bet-table-row:last-child {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+a {
+    color: transparent linear-gradient(94deg, #b6842d, #ebda8d 55%, #b7862f);
+    text-decoration: none;
+}
+
+.calendar-space {
+    color: #a1a1a1;
+    width: 100%;
+    display: block;
+    text-align: left;
+    white-space: normal;
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding-left: 0 !important;
+}
+
+.match-name,
+.match-name a {
+    font-size: 1rem;
+    line-height: 1.1;
+    color: #333;
+}
+
+.market-count {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 3px;
+}
+
+.live-inplay {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 10px;
+    height: 10px;
+    width: 10px;
+    line-height: 20px;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 0;
+    color: #fff;
+    background: #3c1404;
+    border-radius: 50px;
+    -webkit-transition: all 1.5s ease-in-out;
+    -moz-transition: all 1.5s ease-in-out;
+    -o-transition: all 1.5s ease-in-out;
+    -ms-transition: all 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
+    -webkit-animation-direction: normal;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: blink2;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-direction: normal;
+    -moz-animation-duration: 2s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-name: blink2;
+    -moz-animation-timing-function: ease-in-out;
+}
+
+@keyframes blink2 {
+    0% {
+        background-color: #28a745;
+    }
+
+    50% {
+        background-color: #202020;
+    }
+
+    100% {
+        background-color: #28a745;
+    }
+}
+
+.fancy-game-icon {
+    margin-left: 4px;
+}
+
+.fancy-game-link {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 10px;
+    height: 20px;
+    width: 30px;
+    line-height: 20px;
+    display: inline-block;
+    margin-left: 4px;
+    margin-right: 0;
+    color: #fff;
+    background: #8b8b8b;
+    border-radius: 50px;
+}
+
+.fancy-game-icon img {
+    width: 20px;
+}
+
+.btn-block {
+    display: flex;
+    margin: 0 !important;
+    margin-bottom: 1px !important;
+}
+
+.back {
+    display: flex !important;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    padding: 0.12em 0.5em;
+    margin: 0px 0.15em;
+    position: relative;
+    z-index: 0;
+    text-align: center;
+    border-radius: 2px;
+    min-height: 35px;
+    cursor: pointer;
+    background-color: #a5d9fe;
+}
+
+.odd-button__price {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 700;
+}
+
+.odd-button__volume {
+    font-size: 9px;
+    line-height: 11px;
+    min-height: 11px;
+    border: none !important;
+}
+
+.lay {
+    display: flex !important;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    padding: 0.12em 0.5em;
+    margin: 0px 0.15em;
+    position: relative;
+    z-index: 0;
+    text-align: center;
+    border-radius: 2px;
+    min-height: 35px;
+    cursor: pointer;
+    background-color: #f8d0ce;
+}

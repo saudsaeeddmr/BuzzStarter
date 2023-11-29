@@ -138,17 +138,28 @@ span.min-max {
     cursor: pointer;
     background-color: #f8d0ce;
 }
+.RunnerClass{
+    display: flex;
+}
 .market-body-listing .row .col-6:nth-child(2) {
     position: relative;
+    padding: unset;
 }
 
 @media only screen and (min-width:786px) {
     .MatchClass > div{
         width: 50%;
     }
+    
 }
 
 @media only screen and (max-width:768px) {
+    .MatchClass {
+        width: 100%;
+    }
+    .RunnerClass{
+        width: 100%;
+    }
     span.min-max {
         display: block;
         text-align: right;

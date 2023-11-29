@@ -202,3 +202,210 @@ a {
     cursor: pointer;
     background-color: #f8d0ce;
 }
+/* =====================
+========================
+        Mobile View
+=========================
+========================== */
+@media (max-width: 767px){
+.mbl-inplay-con, .detail-page {
+    padding: 0;
+}
+}
+.inplay-header {
+    background:  transparent linear-gradient(94deg, #b6842d, #ebda8d 55%, #b7862f);
+    clip-path: polygon(0px 0px, 100% 0%, 85% 100%, 0% 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 0px 15px;
+    margin: 5px 0;
+    width: 60%;
+}
+.inplay-header-inn {
+    display: flex;
+    align-items: center;
+}
+.inplay-header-inn-ic {
+    font-size: 20px;
+    width: 24px;
+    height: 32px;
+    font-style: normal;
+    padding-right: 3px;
+    line-height: 30px;
+    color: #fff;
+}
+.inplay-header-inn-txt {
+    font-size: 13px;
+    color: #fff;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.list-md {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.inplay-market-inn {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #dedddd;
+}
+.market-list {
+    display: flex;
+    background-color: #fff;
+}
+.bet-ball-ic {
+    background-color: transparent;
+    border: 0px;
+    padding: 0px;
+    flex-shrink: 0;
+    font-size: 14px;
+    margin: 0px 0.5em;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 20px;
+    margin-right: 0;
+}
+.ball-ic{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 1.25em;
+    height: 1.25em;
+    flex-shrink: 0;
+}
+.team-name-head {
+    /* display: flex; */
+    justify-content: space-between;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    cursor: pointer;
+    min-width: 0px;
+    font-size: 12px;
+    padding: 0.2em 5px 0.5em 10px;
+    position: relative;
+    background: #DEDDDD;
+    clip-path: polygon(0px 0px, 100% 0%, 100% 100%, 5% 100%);
+}
+.team-1 {
+    line-height: normal;
+}
+.in__play {
+    animation: in__play 1s linear infinite;
+}
+@keyframes in__play{
+    0% {
+        color: green;
+    }
+    50% {
+        color: darkgreen;
+    }
+    100% {
+        color: palegreen;
+    }
+}
+.team-2 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+.team-2 span {
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    justify-content: center;
+}
+.team-2 div {
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+}
+.team-1, .team-1 a, .team-2, .team-2 a {
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.stream-ic img {
+    width: 20px;
+}
+.fancy-ic-txt {
+    font-weight: 900 !important;
+    font-style: normal !important;
+    font-size: 10px !important;
+    height: 20px;
+    width: 30px;
+    line-height: 20px;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 0;
+    color: #fff !important;
+    background: #b88831;
+    border-radius: 50px;
+    text-align: center;
+}
+.main-game-con {
+    width: 100%;
+    padding: 1px;
+    display: flex;
+    position: relative;
+}
+.inplay-market-inn .back-lay-con {
+    display: flex;
+    margin: 0 !important;
+    margin-bottom: 1px !important;
+    width: 100%;
+}
+.back {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    padding: 0.12em 0.5em;
+    margin: 0px 1px;
+    position: relative;
+    z-index: 0;
+    text-align: center;
+    min-height: 46px;
+    cursor: pointer;
+    background-color: #b1e1ff;
+}
+.odd-price {
+    font-size: 13px;
+    line-height: 14px;
+    font-weight: 800;
+}
+.odd-volume{
+    font-size: 10px;
+    line-height: 11px;
+    min-height: 11px;
+    border: none!important;
+}
+.lay {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    padding: 0.12em 1px;
+    margin: 0px 0.15em;
+    position: relative;
+    z-index: 0;
+    text-align: center;
+    min-height: 46px;
+    cursor: pointer;
+    background-color: #ffd5da;
+}

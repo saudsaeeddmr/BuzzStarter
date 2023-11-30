@@ -1,25 +1,44 @@
+.eventName {
+    background: #dedddd;
+    border-bottom: 0px solid #333;
+    position: relative;
+    padding: 5px 10px;
+}
+.event-name-main {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #000 !important;
+    display: inline-block;
+    margin: 0px 0 0 5px !important;
+}
+.apl-icon-circle-arrow-left:before {
+    content: '\F0A8';
+}
 .market-group {
     margin-bottom: 10px;
 }
-.MatchClass{
-    display: flex!important;
+
+.MatchClass {
+    display: flex !important;
     justify-content: space-between;
     align-items: center;
 }
 
-.market-group-header {
+.marketheader {
     font-size: 12px;
     font-weight: normal;
     padding: 0 10px;
     background: #f1f1f1;
     position: relative;
 }
+
 .market-name-col {
     width: 60%;
     display: flex;
     -webkit-box-align: center;
     align-items: center;
-    background:  transparent linear-gradient(94deg, #b6842d, #ebda8d 55%, #b7862f);
+    background: transparent linear-gradient(94deg, #b6842d, #ebda8d 55%, #b7862f);
     padding: 6px 2px 6px 10px;
     position: relative;
     height: 32px;
@@ -28,52 +47,70 @@
     min-width: 200px;
     text-transform: uppercase;
 }
+
 .market-icon {
     width: 20px;
     margin-right: 4px;
     display: inline-block;
 }
-audio, canvas, img, svg, video {
+
+audio,
+canvas,
+img,
+svg,
+video {
     max-width: 100%;
     height: auto;
     box-sizing: border-box;
 }
+
 span.min-max {
-    position: absolute;
+    /* position: absolute;
     right: -65%;
-    font-size: 10px;
+    font-size: 10px; */
+    display: block;
+    text-align: right;
+    font-size: 11px;
 }
+
 .market-name-col::after {
     content: "";
     width: 32px;
     height: 32px;
-    background:  transparent linear-gradient(94deg, #b6842d, #ebda8d 55%, #b7862f);
+    background: transparent linear-gradient(94deg, #b6842d, #ebda8d 55%, #b7862f);
     position: absolute;
     right: -18px;
     top: 0px;
     transform: skew(39deg);
 }
+
 .back-title {
     color: rgb(3, 117, 204);
     font-size: 12px;
     text-transform: uppercase;
     font-weight: 600;
 }
+
 .lay-title {
     color: rgb(224, 60, 60);
     font-size: 12px;
     text-transform: uppercase;
     font-weight: 600;
 }
+
 .shadow-box {
     border-radius: 5px;
     box-shadow: rgb(0 0 0 / 5%) -2px 3px 6px, rgb(0 0 0 / 12%) 1px 1px 3px;
+    /* margin-top: 4px;
+    padding-right: 5px; */
 }
-.market-body-listing {
+
+.makertClass {
     color: rgb(57, 65, 95);
     border-radius: 0px;
     border-bottom: 1px solid rgb(128 128 128 / 14%);
 }
+
 .event-name {
     text-transform: capitalize;
     font-size: 12px;
@@ -86,11 +123,13 @@ span.min-max {
     line-height: 44px;
     position: relative;
 }
+
 .btn-block {
     display: flex;
     margin: 0 !important;
     margin-bottom: 1px !important;
 }
+
 .back {
     display: flex !important;
     flex-direction: column;
@@ -109,17 +148,20 @@ span.min-max {
     cursor: pointer;
     background-color: #a5d9fe;
 }
+
 .odd-button__price {
     font-size: 12px;
     line-height: 14px;
     font-weight: 700;
 }
+
 .odd-button__volume {
     font-size: 9px;
     line-height: 11px;
     min-height: 11px;
-    border: none!important;
+    border: none !important;
 }
+
 .lay {
     display: flex !important;
     flex-direction: column;
@@ -138,28 +180,133 @@ span.min-max {
     cursor: pointer;
     background-color: #f8d0ce;
 }
-.RunnerClass{
+
+.RunnerClass {
     display: flex;
+    margin-top: -4px;
 }
-.market-body-listing .row .col-6:nth-child(2) {
+
+/* .RunnerClass > div > div {
+    padding: 4px 5px 0 0 ;
+} */
+.makertClass .row .col-6:nth-child(2) {
     position: relative;
     padding: unset;
 }
 
+.d-minMax {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 0;
+}
+
+.d-layminMax {
+    display: flex !important;
+    align-items: center;
+}
+.cashout {
+    text-transform: uppercase;
+    font-size: 9px;
+    padding: 3px 6px;
+    border-radius: 4px;
+    margin-left: 4px;
+    background: #000;
+    color: #fff !important;
+    font-weight: 700;
+    border: 1px solid #fff;
+    text-decoration: none;
+}
+
 @media only screen and (min-width:786px) {
-    .MatchClass > div{
+    .MatchClass>div {
         width: 50%;
     }
-    
+
+
 }
 
 @media only screen and (max-width:768px) {
-    .MatchClass {
-        width: 100%;
+    .eventNmeMObile h2 {
+        margin: 1px 0;
+        text-transform: uppercase;
+        font-size: 14px;
+        text-align: center;
+        padding: 7px 0;
+        background: transparent linear-gradient(94deg, #b6842d, #ebda8d 55%, #b7862f);
+        color: #000;
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
     }
-    .RunnerClass{
-        width: 100%;
+    .eventNmeMObile h2:before {
+        content: "";
+        width: 20px;
+        height: 100%;
+        background:  #bb8c38 ;
+        position: absolute;
+        left: -10px;
+        top: 0px;
+        transform: skew(339deg);
     }
+    .eventNmeMObile h2:after {
+        content: "";
+        width: 20px;
+        height: 100%;
+        background:transparent linear-gradient(94deg, #b6842d, #ebda8d 55%, #b7862f);
+        position: absolute;
+        right: -10px;
+        top: 0px;
+        transform: skew(-339deg);
+    }
+    .eventNmeMObile div {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 1px;
+        margin: 1px 0;
+        padding: 1px 0;
+    }
+    .eventNmeMObile div time {
+        padding: 0 2px;
+        margin-left: 5px;
+    }
+    .market-name-col {
+        width: 95%;
+        padding: 6px 0px 6px 6px;
+
+    }
+
+    .RunnerClass {
+        /* width: 100%; */
+    }
+
+    .shadow-box {
+        /* padding-right: 0px; */
+        margin: 0;
+        box-shadow: none;
+    }
+
+    .makertClass {
+        color: rgb(57, 65, 95);
+        border-radius: 10px;
+    }
+
+    .LayBack {
+        padding-right: 0;
+    }
+
+    .shadow-box {
+        background: #f1f1f1;
+        border-radius: 5px;
+    }
+
+    .marketheader {
+        background: #f3f8fb;
+        /* padding-right: 0; */
+    }
+
     span.min-max {
         display: block;
         text-align: right;
@@ -167,27 +314,45 @@ span.min-max {
         font-weight: 100;
 
     }
-    .eventtitle-tv h2:after, .market-name-col::after {
+
+    .eventNmeMObile h2:after,
+    .market-name-col::after {
         background: #bb8c38 !important;
     }
+
     .market-name-col::after {
         width: 15px;
         height: 100%;
         right: -8px;
         transform: skew(25deg);
     }
+
     .back {
-      border-radius: 0;
-      min-height: 46px;
-      margin: 0px 1px;
-        
+        border-radius: 0;
+        min-height: 46px;
+        margin: 0px 1px;
+        color: #000;
+
     }
+
     .lay {
         margin: 0px 0.0em;
-      }
-    
-    .mobileBox{
+        color: #000;
+    }
+
+    .mobileBox {
+        /* width: 100%; */
+    }
+    .btn-block {
+        /* display: block; */
         width: 100%;
     }
-    
+    .back-title {
+        color: black;
+    }
+
+    .lay-title {
+        color: black;
+    }
+
 }

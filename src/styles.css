@@ -1,16 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,300,700");
+
+@import url("https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic,900,900italic");
+
+
+
 /* You can add global styles to this file, and also import other style files */
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+
 body {
     /* background-color: black; */
+    margin: 0;
 }
 
-@media only screen and (min-width:786px) {
+@media only screen and (min-width:768px) {
     .showInMobile {
-        display: none;
+        display: none !important;
     }
 }
 
 @media only screen and (max-width:768px) {
     .showInDesktop {
-        display: none;
+        display: none !important;
     }
+}
+@media only screen and (min-width:290px) {
+    .showInfold {
+        display: none !important;
+        
+    } 
+}
+@media only screen and (max-width:290px) {
+    .hideInfold {
+        display: none !important;
+    }
+  
+  
 }

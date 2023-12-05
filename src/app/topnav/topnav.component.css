@@ -1,0 +1,36 @@
+.sport-menu {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    background: #202020;
+    border-bottom: 0px solid #ddd;
+}
+.sport-menu__item {
+    display: flex;
+    align-items: center;
+}
+.sport-menu__link {
+    padding: 5px 20px;
+    line-height: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+a {
+    color: transparent linear-gradient(94deg, #b6842d, #ebda8d 55%, #b7862f);
+    text-decoration: none;
+}
+.sport-menu__item::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: transparent linear-gradient(94deg, #b6842d, #ebda8d 55%, #b7862f);
+}
+.sport-menu__link--casino {
+    color: #fffa00;
+}
+.link-name{
+    font-size: 12px;
+}

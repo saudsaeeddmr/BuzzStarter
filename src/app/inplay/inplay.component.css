@@ -254,7 +254,7 @@ a {
     display: flex;
     background-color: #fff;
 }
-.bet-ball-ic {
+.IplayImag {
     background-color: transparent;
     border: 0px;
     padding: 0px;
@@ -267,7 +267,7 @@ a {
     width: 20px;
     margin-right: 0;
 }
-.ball-ic{
+.ImagDiv{
     display: flex;
     -webkit-box-pack: center;
     justify-content: center;
@@ -293,10 +293,11 @@ a {
 .team-1 {
     line-height: normal;
 }
-.in__play {
-    animation: in__play 1s linear infinite;
+.Iplay {
+    animation: Iplay 1s linear infinite;
+    margin-left: 4px;
 }
-@keyframes in__play{
+@keyframes Iplay{
     0% {
         color: green;
     }
@@ -364,23 +365,7 @@ a {
     margin-bottom: 1px !important;
     width: 100%;
 }
-.back {
-    display: flex;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    justify-content: center;
-    width: 100%;
-    -webkit-box-flex: 1;
-    flex-grow: 1;
-    padding: 0.12em 0.5em;
-    margin: 0px 1px;
-    position: relative;
-    z-index: 0;
-    text-align: center;
-    min-height: 46px;
-    cursor: pointer;
-    background-color: #b1e1ff;
-}
+
 .odd-price {
     font-size: 13px;
     line-height: 14px;
@@ -391,21 +376,4 @@ a {
     line-height: 11px;
     min-height: 11px;
     border: none!important;
-}
-.lay {
-    display: flex;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    justify-content: center;
-    width: 100%;
-    -webkit-box-flex: 1;
-    flex-grow: 1;
-    padding: 0.12em 1px;
-    margin: 0px 0.15em;
-    position: relative;
-    z-index: 0;
-    text-align: center;
-    min-height: 46px;
-    cursor: pointer;
-    background-color: #ffd5da;
 }

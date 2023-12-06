@@ -1,39 +1,55 @@
+.mainDiv {
+    overflow: hidden;
+    position: relative;
+    height : 100vh;
+}
+
 .ListDiv {
-    display:flex;
-    height: 100%;
+    display: flex;
+    /* height: 100%; */
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
     background-color: #fff;
     width: 178px;
     list-style: none;
-    padding: 10px 15px;
+    padding: 0;
     display: block;
     /* font-weight: 700; */
     text-decoration: none;
     transition: all 150ms;
     color: #000;
+    font-size: 12px;
 
 }
-li:not(:last-child) > a {
+
+li:not(:last-child)>a {
     border-bottom: 1px solid #efefef;
 }
+
 .ListDiv {
     border-bottom: 1px solid #efefef;
 
 }
 
-.ListDiv :hover {
+/* .ListDiv :hover {
     transform: scale(1.1);
     transition: all 150ms;
     border-top: 1px solid #ddd;
     text-decoration: none;
-    /* padding: 0px 7px; */
-}
+    
+} */
 
 .sportimg {
     margin-right: 10px;
     display: inline-block;
     width: 20px;
+}
+
+li.has-submenu>a:hover {
+    background-image: url(../../assets/sidNav/submenu-arrow-active.svg);
+    background-repeat: no-repeat;
+    background-size: 8px 12px;
+    background-position: right 10px center;
 }
 
 .arrowicon {
@@ -43,16 +59,18 @@ li:not(:last-child) > a {
     background-size: 8px 12px;
 }
 
-li.has-submenu > a {
+li.has-submenu>a {
     background-image: url(../../assets/sidNav/submenu-arrow.svg);
     background-position: right 10px center;
     background-repeat: no-repeat;
     background-size: 8px 12px;
 }
- li:not(:last-child) > a {
+
+li:not(:last-child)>a {
     border-bottom: 1px solid #efefef;
 }
-li > a {
+
+li>a {
     display: block;
     font-weight: 700;
     padding: 10px 15px;
@@ -60,25 +78,141 @@ li > a {
     transition: all 150ms;
     color: #000;
 }
-li:not(:last-child) > a {
+
+li:not(:last-child)>a {
     border-bottom: 1px solid #efefef;
 }
- li > a:hover {
+
+li>a:hover {
     transform: scale(1.1);
     border-top: 1px solid #ddd;
     text-decoration: none;
 }
- li > a:hover {
+
+li>a:hover {
     background: #f1f1f1;
     border-radius: 3px;
 }
- li {
+
+li {
     list-style-type: none;
     padding-left: 0;
     margin: 0;
 }
+
 .sport-icon {
     margin-right: 10px;
     display: inline-block;
     width: 20px;
+}
+
+.submenu-header {
+    background-position: left 20px center;
+    background-repeat: no-repeat;
+    background-size: 8px 14px;
+    border-bottom: solid 1px #efefef;
+    cursor: pointer;
+    position: relative;
+}
+
+.submenu-header>a {
+    color: inherit;
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px 20px 10px 40px !important;
+    padding-left: 40px;
+    text-decoration: none;
+    background: transparent linear-gradient(94deg, #b6842d, #ebda8d 55%, #b7862f);
+    color: #fff;
+}
+
+.submenu-header>a:before {
+    content: '\F137';
+    background-position: right 20px center;
+    background-repeat: no-repeat;
+    background-size: 8px 14px;
+    /* content: ""; */
+    height: 100%;
+    left: 15px;
+    position: absolute;
+    top: 9px;
+    /* transform: rotate(-180deg); */
+    width: 20px;
+    display: inline-block;
+    font: normal normal normal 16px/1 Apollo;
+    font-size: 16px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* click transform */
+.opened {
+    pointer-events: auto;
+    transform: translateX(0px) translateZ(0px);
+}
+ .submenu > label {
+    color: transparent linear-gradient(94deg, #b6842d, #ebda8d 55%, #b7862f);
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-top: 0;
+    padding: 6px 10px;
+    width: 100%;
+    background: #ebebeb;
+}
+.submenu-opened {
+    overflow: hidden;
+}
+
+.submenu.opened {
+    left: 0;
+    pointer-events: auto;
+    transition: all 150ms;
+}
+
+.submenu {
+    /* bottom: 0; */
+    min-height: 100%;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: auto;
+    pointer-events: none;
+    /* position: fixed; */
+    position: absolute;
+    top: -0;
+    /* width: 100%; */
+    z-index: 1;
+}
+
+li {
+    display: block;
+}
+.submenu {
+    background-color: #ffffff;
+    left: 180px;
+    transition: all 250ms;
+}
+
+.zeynep {
+    bottom: 0;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: auto;
+    pointer-events: none;
+    /* position: fixed; */
+    position: absolute;
+    top: 0;
+    transform: translateX(100%) translateZ(0px);
+    z-index: 1011;
+}
+
+.zeynep:not(.no-transition),
+.zeynep .submenu:not(.no-transition) {
+    transition: all 250ms;
+}
+
+.current li.has-submenu>a {
+    padding: 6px 8px;
 }

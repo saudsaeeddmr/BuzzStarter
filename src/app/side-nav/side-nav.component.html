@@ -1,38 +1,38 @@
-<div class="mainDiv " >
-    <li class="sportItem ListDiv"  *ngFor="let item of marketData" >
+<div class="mainDiv ">
+    <li class="sportItem ListDiv" *ngFor="let item of marketData">
         <a href="javascript:void(0);" class="sportName" (click)="goToNxtTab()">
             <img alt="" class="sport-icon" src="../../assets/sidNav/4.svg"> {{item.sportname}}</a>
     </li>
     <div class="submenu opened current " [class.slider]="tabOpen == false">
-        <div  class="previousTab"><a  href="javascript:void(0);" (click)="goToPrivous()">Previous</a></div>
-        <label >Cricket</label>
+        <div class="previousTab"><a href="javascript:void(0);" (click)="goToPrivous()">Previous</a></div>
+        <label>Cricket</label>
         <li class="sportItem ListDiv">
             <a href="javascript:void(0);" class="sportName" (click)="goToSubTab()"> Cricket1 </a>
-    
+
         </li>
         <li class="sportItem ListDiv">
             <a href="javascript:void(0);" class="sportName"> Cricket 2</a>
-    
+
         </li>
         <li class="sportItem ListDiv">
             <a href="javascript:void(0);" class="sportName"> Cricket3 </a>
-    
+
         </li>
     </div>
     <div class="submenu  " [class.opened]="subTab">
-        <div  class="previousTab"><a  href="javascript:void(0);" (click)="goToPrivousSub()">Previous</a></div>
-        <label >Cricket</label>
+        <div class="previousTab"><a href="javascript:void(0);" (click)="goToPrivousSub()">Previous</a></div>
+        <label>Cricket</label>
         <li class="sportItem ListDiv">
             <a href="javascript:void(0);" class="sportName"> Cricket </a>
-    
+
         </li>
         <li class="sportItem ListDiv">
             <a href="javascript:void(0);" class="sportName"> Cricket </a>
-    
+
         </li>
         <li class="sportItem ListDiv">
             <a href="javascript:void(0);" class="sportName"> Cricket </a>
-    
+
         </li>
     </div>
 </div>

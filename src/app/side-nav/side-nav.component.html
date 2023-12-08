@@ -1,37 +1,37 @@
 <div class="mainDiv " >
-    <li class="has-submenu ListDiv"  *ngFor="let item of marketData" >
-        <a href="javascript:void(0);" class="sport-type-Cricket" (click)="goToNxtTab()">
+    <li class="sportItem ListDiv"  *ngFor="let item of marketData" >
+        <a href="javascript:void(0);" class="sportName" (click)="goToNxtTab()">
             <img alt="" class="sport-icon" src="../../assets/sidNav/4.svg"> {{item.sportname}}</a>
     </li>
-    <div class="submenu opened current " [class.zeynep]="tabOpen == false">
-        <div  class="submenu-header"><a  href="javascript:void(0);" (click)="goToPrivous()">Previous</a></div>
+    <div class="submenu opened current " [class.slider]="tabOpen == false">
+        <div  class="previousTab"><a  href="javascript:void(0);" (click)="goToPrivous()">Previous</a></div>
         <label >Cricket</label>
-        <li class="has-submenu ListDiv">
-            <a href="javascript:void(0);" class="sport-type-Cricket" (click)="goToSubTab()"> Cricket1 </a>
+        <li class="sportItem ListDiv">
+            <a href="javascript:void(0);" class="sportName" (click)="goToSubTab()"> Cricket1 </a>
     
         </li>
-        <li class="has-submenu ListDiv">
-            <a href="javascript:void(0);" class="sport-type-Cricket"> Cricket 2</a>
+        <li class="sportItem ListDiv">
+            <a href="javascript:void(0);" class="sportName"> Cricket 2</a>
     
         </li>
-        <li class="has-submenu ListDiv">
-            <a href="javascript:void(0);" class="sport-type-Cricket"> Cricket3 </a>
+        <li class="sportItem ListDiv">
+            <a href="javascript:void(0);" class="sportName"> Cricket3 </a>
     
         </li>
     </div>
     <div class="submenu  " [class.opened]="subTab">
-        <div  class="submenu-header"><a  href="javascript:void(0);" (click)="goToPrivousSub()">Previous</a></div>
+        <div  class="previousTab"><a  href="javascript:void(0);" (click)="goToPrivousSub()">Previous</a></div>
         <label >Cricket</label>
-        <li class="has-submenu ListDiv">
-            <a href="javascript:void(0);" class="sport-type-Cricket"> Cricket </a>
+        <li class="sportItem ListDiv">
+            <a href="javascript:void(0);" class="sportName"> Cricket </a>
     
         </li>
-        <li class="has-submenu ListDiv">
-            <a href="javascript:void(0);" class="sport-type-Cricket"> Cricket </a>
+        <li class="sportItem ListDiv">
+            <a href="javascript:void(0);" class="sportName"> Cricket </a>
     
         </li>
-        <li class="has-submenu ListDiv">
-            <a href="javascript:void(0);" class="sport-type-Cricket"> Cricket </a>
+        <li class="sportItem ListDiv">
+            <a href="javascript:void(0);" class="sportName"> Cricket </a>
     
         </li>
     </div>

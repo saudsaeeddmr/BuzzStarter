@@ -45,7 +45,7 @@ li:not(:last-child)>a {
     width: 20px;
 }
 
-li.has-submenu>a:hover {
+li.sportItem>a:hover {
     background-image: url(../../assets/sidNav/submenu-arrow-active.svg);
     background-repeat: no-repeat;
     background-size: 8px 12px;
@@ -59,7 +59,7 @@ li.has-submenu>a:hover {
     background-size: 8px 12px;
 }
 
-li.has-submenu>a {
+li.sportItem>a {
     background-image: url(../../assets/sidNav/submenu-arrow.svg);
     background-position: right 10px center;
     background-repeat: no-repeat;
@@ -106,7 +106,7 @@ li {
     width: 20px;
 }
 
-.submenu-header {
+.previousTab {
     background-position: left 20px center;
     background-repeat: no-repeat;
     background-size: 8px 14px;
@@ -115,7 +115,7 @@ li {
     position: relative;
 }
 
-.submenu-header>a {
+.previousTab>a {
     color: inherit;
     display: block;
     font-size: 12px;
@@ -127,7 +127,7 @@ li {
     color: #fff;
 }
 
-.submenu-header>a:before {
+.previousTab>a:before {
     content: '\F137';
     background-position: right 20px center;
     background-repeat: no-repeat;
@@ -195,7 +195,7 @@ li {
     transition: all 250ms;
 }
 
-.zeynep {
+.slider {
     bottom: 0;
     overflow: hidden;
     -webkit-overflow-scrolling: touch;
@@ -208,11 +208,11 @@ li {
     z-index: 1011;
 }
 
-.zeynep:not(.no-transition),
-.zeynep .submenu:not(.no-transition) {
+.slider:not(.no-transition),
+.slider .submenu:not(.no-transition) {
     transition: all 250ms;
 }
 
-.current li.has-submenu>a {
+.current li.sportItem>a {
     padding: 6px 8px;
 }

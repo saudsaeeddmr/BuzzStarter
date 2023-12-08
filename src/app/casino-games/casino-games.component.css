@@ -1,0 +1,128 @@
+.casino-games-container {
+    width: calc(98vw - 175px);
+    margin-left: auto;
+    padding-bottom: 20px;
+}
+.casino-games {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.casino-games-column {
+    width: 24.9%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.first {
+    height: 270px;
+    align-items: flex-end;
+    background-size: cover;
+}
+.second {
+    height: 270px;
+    background-size: cover;
+}
+.thirdd {
+    height: 460px;
+    background-size: cover;
+}
+.six {
+    height: 270px;
+    align-items: flex-end;
+    background-size: cover;
+}
+.seven {
+    height: 270px;
+    background-size: cover;
+}
+.eight {
+    height: 460px;
+    background-size: cover;
+}
+.nine {
+    height: 595px;
+    margin-right: 0px;
+    align-items: flex-end;
+    background-size: cover;
+}
+.ten {
+    height: 407px;
+    margin-right: 0px;
+    background-size: cover;
+}
+.casino-games-column a {
+    width: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: row;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid rgb(51, 51, 51);
+    margin: 2px 2px 0px 0px;
+    position: relative;
+    cursor: default;
+    background-position: center top;
+}
+.casino-games-column a:hover .shadow-effect {
+    transform: scale(1);
+}
+.casino-games-column .shadow-effect {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: rgb(0 0 0 / 71%);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition: all 0.5s ease 0s;
+}
+.casino-games-column .button-style {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.play-button {
+    transform: skew(340deg);
+    border: 1px solid var(--theme-color);
+    margin-left: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 3px 5px 4px;
+    transition: color 0.1s linear 0s;
+    background: var(--theme-color) ;
+}
+.play-button button {
+    width: 80px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    padding: 10px 0px;
+    font-size: 14px;
+    transform: skew(-340deg);
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.casino-games-column a img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
